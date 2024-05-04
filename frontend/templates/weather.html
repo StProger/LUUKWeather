@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WeatherData</title>
+    <link href="{{ url_for('static', path='styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <a href="/">На главную</a>
+    <div class="table_weather">
+        <table border="1">
+            <tr>
+                <th>
+                    Дата
+                </th>
+                <th>
+                    Температура воздуха(°С)
+                </th>
+                <th>
+                    Скорость воздуха(м/с)
+                </th>
+            </tr>
+            {% for weather in weather_data %}
+            <tr>
+                <td>
+                    {{weather.date}}
+                </td>
+                <td>
+                    {{weather.air_temperature}}
+                </td>
+                <td>
+                    {{weather.wind_speed}}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

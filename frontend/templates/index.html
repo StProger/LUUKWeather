@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link href="{{ url_for('static', path='styles.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', path='script.js') }}"></script>
+</head>
+<body>
+    <div class="description">
+        <h3>
+            Пособие к использованию
+        </h3>
+        <p>
+            Для получения температуры нажмите на кнопку "Получить"
+        </p>
+<!--        <p>-->
+<!--            <b>-->
+<!--                По умолчанию координаты Москвы: Широта: 55.7522, Долгота: 37.6156-->
+<!--            </b>-->
+<!--        </p>-->
+    </div>
+<!--    <div class="weather">-->
+<!--        <label>-->
+<!--            Широта-->
+<!--            <input type="text" id="lat_value" placeholder="Введите широту">-->
+<!--        </label>-->
+<!--        <label>-->
+<!--            Долгота-->
+<!--            <input type="text" id="lon_value" placeholder="Введите долготу">-->
+<!--        </label>-->
+<!--    </div>-->
+    <div class="get__weather">
+        <button type="button" onclick="get_weather()">
+            Получить
+        </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.weather{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+button{
+    margin: 10px 150px;
+}
+
+label{
+    margin: 10px;
+}
+
+table{
+    border: solid;
+}
